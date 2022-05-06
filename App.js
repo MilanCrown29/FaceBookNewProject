@@ -36,6 +36,7 @@ export default class App extends Component {
       <View style={{flex: 1, margin: 50}}>
         <LoginButton
           onLoginFinished={(error, result) => {
+            console.log('result');
             if (error) {
               console.log('login has error: ' + result.error);
             } else if (result.isCancelled) {
